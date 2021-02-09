@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+</head>
+
+<!--CSS-->
+<link rel="stylesheet" href="guess.css">
+<body>
+<h1 class="head" align="center">Number-Guess-Game</h1>
+<div class="sidebar">
+<h1 align="center">Hint</h1>
+<br><br><br><br>
+<pre>
+ Try finding the mid values of the range
+ in which u have to guess the number.
+</pre>
+<a href="index.html"><img src="home.jfif"><br></a>
+</div>
+<button id="side">></button>
+<div class="extra" align="center">
+<br><br>
+<h3 class="add">Input the specifications of next level</h3><br><br>
+<input type="number" class="max" placeholder="upper limit" min="1"><input type="number" class="moves" placeholder="no. of turns" min="1">
+<br><br><br>
+<input type="button" value="Create" class="create" onclick="Create();">
+</div>
+<div class="main" align="center">
+<div class="limit">
+<h2 class="range">Range <span class="ranges"></span></h2>
+</div>
+<div class="tl">
+<h2 class="turns">Chances Left&nbsp&nbsp&nbsp&nbsp<span class="turn"></span></h2> <h2 class="level">Level&nbsp&nbsp&nbsp&nbsp<span class="levels"></span></h2><br>
+</div>
+<p class="result">The number you entered is : <span class="guess"></span></p>
+<input type="number" class="inputs">
+<button class="check">Check</button>
+<br><br><br><br>
+<input type="button" value="Do you want to add your own level?" onclick="Extra()">
+</div>
+<div class="footer">
+<a href="https://github.com/vishal6969" target="_blank"><img src="github.jfif"
+ title="github"></a>
+ <a href="https://instagram.com/__mishra_jee__" target="_balnk"><img src="instagram.jfif"
+ title="instagram"></a>
+<a href="https://www.linkedin.com/in/vishal-kumar-mishra-606a051a9" target="_balnk"><img src="linkedin.jfif"
+ title="linkedin"></a>
+ </div>
+ <p class="foot">Github &nbsp&nbsp&nbsp&nbsp Instagram &nbsp&nbsp&nbsp&nbsp Linkedin</p>
+</body>
+
+<!--JAVASCRIPT-->
+<script src="guess.js">
+</script>
+</html>

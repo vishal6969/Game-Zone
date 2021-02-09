@@ -1,0 +1,56 @@
+body{
+    overflow:hidden;
+    background-image:url("game.jfif");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.main{
+    width:40%;
+    height:1000px;
+    border:0px solid black;
+    background-color:aqua;
+    margin-left:30%;
+    overflow:hidden;
+    opacity:0.9;
+}
+input{
+    width:50%;
+    margin-top:5%;
+    height:2em;
+    animation-name:move;
+    animation-duration:4s;
+    animation-timing-function:linear;
+    background-color:blue;
+    font-size:120%;
+    font-weight:bold;
+}
+input:hover{
+    background-color:white;
+}
+.butt{
+    margin-top:30%;
+}
+h1{
+    font-family:Courier New;
+    width:20%;
+    margin-left:40%;
+    background-color:white;
+    animation-name:color;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+h2{
+    font-family:verdana;
+    color:red;
+}
+@keyframes color{
+    25%{color:yellow;}
+    50%{color:blue;}
+    75%{color:red;}
+    100%{color:black;}
+}
+@keyframes move{
+    from{margin-left:800px;}
+    to{margin-left:0px;}
+}
